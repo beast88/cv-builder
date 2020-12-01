@@ -39,3 +39,9 @@ header .fa-address-card {
 	font-size: 2rem;
 	margin-bottom: 10px;
 }
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
