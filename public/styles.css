@@ -8,6 +8,10 @@ body {
 	color: #212F3C;
 }
 
+a {
+	color: #212F3C;
+}
+
 #root {
 	display: flex;
 	flex-direction: column;
