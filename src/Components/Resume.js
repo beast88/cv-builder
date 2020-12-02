@@ -1,9 +1,10 @@
 import React from 'react'
+import Personal from './Personal'
 
 const Resume = () => {
 	return (
 		<main>
-			<h1>Build some stuff here</h1>
+			<Personal />
 		</main>
 	)
 }
