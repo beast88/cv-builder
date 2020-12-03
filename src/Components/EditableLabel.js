@@ -6,7 +6,8 @@ class EditableLabel extends Component{
 		this.state = {
 			text: props.value,
 			isEditing: false,
-			tag: props.tag
+			tag: props.tag,
+			default: props.value
 		}
 	}
 
@@ -18,10 +19,7 @@ class EditableLabel extends Component{
 	}
 
 	handleBlur = () => {
-		this.setState({
-			text: this.state.text,
-			isEditing: false
-		})
+		this.save()
 	}
 
 	handleChange = (e) => {
@@ -32,9 +30,19 @@ class EditableLabel extends Component{
 
 	enter = (e) => {
 		if(e.keyCode === 13) {
+			this.save()
+		}
+	}
+
+	save = (props) => {
+		this.setState({
+			text: this.state.text,
+			isEditing: false
+		})
+
+		if(this.state.text === ''){
 			this.setState({
-				text: this.state.text,
-				isEditing: false
+				text: this.state.default
 			})
 		}
 	}

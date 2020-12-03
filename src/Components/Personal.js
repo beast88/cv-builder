@@ -12,6 +12,13 @@ const Personal = () => {
 			</div>
 
 			<div className="contact">
+			//address line 1
+			//address line 2
+			//city/town
+			//country
+			//post code
+			//phone
+			//email
 
 			</div>
 		</div>
