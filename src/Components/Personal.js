@@ -12,13 +12,13 @@ const Personal = () => {
 			</div>
 
 			<div className="contact">
-			//address line 1
-			//address line 2
-			//city/town
-			//country
-			//post code
-			//phone
-			//email
+			<EditableLabel value='Address Line 1' tag='p' />
+			<EditableLabel value='Address Line 2' tag='p' />
+			<EditableLabel value='Town/City' tag='p' />
+			<EditableLabel value='Country' tag='p' />
+			<EditableLabel value='Post Code' tag='p' />
+			<EditableLabel value='Phone' tag='p' />
+			<EditableLabel value='Email' tag='p' />
 
 			</div>
 		</div>
