@@ -4,7 +4,7 @@ import Resume from './Components/Resume'
 
 const App = () => {
   return (
-    <div>
+    <div className="container">
       <Header />
       <Resume />
     </div>
