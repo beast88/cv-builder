@@ -142,3 +142,25 @@ main {
 .form-control.w-50 input {
 	width: 55px;
 }
+
+.form-control.buttons {
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.form-control.buttons button {
+	padding: 8px;
+	font-size: 1.05rem;
+	border-radius: 20px;
+	color: #2C3E50;
+}
+
+button.submit {
+	background: rgba(28, 130, 71, 0.5);
+	border: rgba(28, 130, 71, 0.5);
+}
+
+button.cancel {
+	background: rgba(231, 77, 60, 0.6);
+	border: rgba(231, 77, 60, 0.6);
+}
