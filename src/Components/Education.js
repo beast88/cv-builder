@@ -67,13 +67,13 @@ class Education extends Component{
 					</div>
 
 					<div className="form-control buttons">
-						<button className="submit"><i className="fa fa-plus-circle"></i> Add</button>
+						<button className="submit"><i className="fa fa-plus-circle"></i> Save</button>
 						<button className="cancel"><i className="fa fa-ban"></i> Cancel</button>
 					</div>
 
 				</form>
 
-				<p>Add a Qualification</p>
+				<button className="add-item"><i className="fa fa-plus-circle"></i> Add</button>
 			</div>
 		)
 	}

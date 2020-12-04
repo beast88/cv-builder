@@ -148,11 +148,13 @@ main {
 	justify-content: space-around;
 }
 
-.form-control.buttons button {
+button {
 	padding: 8px;
 	font-size: 1.05rem;
 	border-radius: 20px;
 	color: #2C3E50;
+	background: rgba(97, 106, 107, 0.5);
+	border: rgba(97, 106, 107, 0.5);
 }
 
 button.submit {
