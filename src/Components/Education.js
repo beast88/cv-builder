@@ -30,7 +30,7 @@ class Education extends Component{
 						/>
 					</div>
 
-					<div className="form-control">
+					<div className="form-control w-50">
 						<label for="from">From:</label>
 						<input
 							type="text"
@@ -39,7 +39,7 @@ class Education extends Component{
 						/>
 					</div>
 
-					<div className="form-control">
+					<div className="form-control w-50">
 						<label for="to">To:</label>
 						<input
 							type="text"

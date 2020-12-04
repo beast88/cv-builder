@@ -6,7 +6,9 @@ const Resume = () => {
 	return (
 		<main>
 			<Personal />
+			<hr />
 			<Education />
+			<hr />
 		</main>
 	)
 }

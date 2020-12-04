@@ -8,6 +8,11 @@ body {
 	color: #212F3C;
 }
 
+hr {
+	border: 1px dashed rgba(15, 16, 21, 0.4);
+	width: 95%;
+}
+
 a {
 	color: #212F3C;
 }
@@ -60,7 +65,7 @@ main {
 }
 
 .personal-info {
-	padding: 10px 0 0 10px;
+	padding: 20px 0 0 20px;
 }
 
 .personal-info * {
@@ -84,7 +89,7 @@ main {
 }
 
 .contact {
-	padding: 10px 50px 0 0;
+	padding: 20px 50px 0 0;
 }
 
 .contact * {
@@ -96,4 +101,44 @@ main {
 	font-family: inherit;
 	font-size: 1rem;
 	width: 130px;
+}
+
+.education {
+	width: 100%;
+	padding: 10px 20px 10px 20px;
+}
+
+.education h3 {
+	font-size: 1.5rem;
+	padding-bottom: 10px;
+}
+
+.education-form {
+	display: flex;
+	flex-direction: column;
+	flex-flow: row wrap;
+}
+
+.form-control {
+	width: 100%;
+	padding-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.form-control.w-50 {
+	width: 50%;
+}
+
+.form-control label {
+	margin-bottom: 5px;
+}
+
+.form-control input {
+	font-family: inherit;
+	font-size: 1.05rem;
+}
+
+.form-control.w-50 input {
+	width: 55px;
 }
