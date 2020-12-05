@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import uniqid from 'uniqid'
+import QualItem from './QualItem'
 
 class Education extends Component{
 	constructor(){
@@ -46,7 +47,6 @@ class Education extends Component{
 
 		this.resetForm()
 		this.toggleForm()
-		console.log(this.state)
 	}
 
 	handleCancel = (e) => {
@@ -73,9 +73,15 @@ class Education extends Component{
 		let hiddenForm = this.state.activeForm ? "education-form" : "education-form hidden"
 		let hiddenButton = this.state.activeButton ? "add-item" : "add-item hidden"
 
+		const displayQual = this.state.quals.map((qual) => {
+			return <QualItem data={qual} key={qual.id}/>
+		})
+
 		return(
 			<div className="education">
 				<h3>Education</h3>
+
+				{displayQual}
 
 				<form className={hiddenForm} onSubmit={this.handleSubmit}>
 					<div className="form-control">
