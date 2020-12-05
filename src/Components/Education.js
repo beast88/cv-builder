@@ -1,11 +1,12 @@
 import React, {Component} from 'react'
+import uniqid from 'uniqid'
 
 class Education extends Component{
 	constructor(){
 		super()
 		this.state = {
 			default: {
-				id: '',
+				id: uniqid(),
 				school: '',
 				from: '',
 				to: '',
@@ -39,12 +40,32 @@ class Education extends Component{
 
 	handleSubmit = (e) => {
 		e.preventDefault()
-		//Need to move the value of default into quals array and reset default and toggle form
+		this.setState({
+			quals: [...this.state.quals, this.state.default]
+		})
+
+		this.resetForm()
+		this.toggleForm()
+		console.log(this.state)
 	}
 
 	handleCancel = (e) => {
 		e.preventDefault()
 		this.toggleForm()
+		this.resetForm()
+	}
+
+	resetForm = () => {
+		this.setState({
+			default: {...this.state.default,
+				id: uniqid(),
+				school: '',
+				from: '',
+				to: '',
+				qualification: '',
+				grade: ''
+			}
+		})
 	}
 
 	render(){
