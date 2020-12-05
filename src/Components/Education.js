@@ -68,13 +68,23 @@ class Education extends Component{
 		})
 	}
 
+	handleDelete = (id) => {
+		const filteredQuals = this.state.quals.filter(qual => {
+			return qual.id !== id
+		})
+
+		this.setState({
+			quals: filteredQuals
+		})
+	}
+
 	render(){
 
 		let hiddenForm = this.state.activeForm ? "education-form" : "education-form hidden"
 		let hiddenButton = this.state.activeButton ? "add-item" : "add-item hidden"
 
 		const displayQual = this.state.quals.map((qual) => {
-			return <QualItem data={qual} key={qual.id}/>
+			return <QualItem data={qual} key={qual.id} handleDelete={this.handleDelete} />
 		})
 
 		return(

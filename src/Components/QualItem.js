@@ -15,7 +15,7 @@ const QualItem = (props) => {
 			</div>
 
 			<div className="delete-container">
-				<i className="fa fa-times-circle"></i>
+				<i className="fa fa-times-circle" onClick={() => {props.handleDelete(props.data.id)}}></i>
 			</div>
 		</div>
 	)
