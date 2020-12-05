@@ -13,6 +13,10 @@ const QualItem = (props) => {
 				<h5>{props.data.qualification}</h5>
 				<p>{props.data.grade}</p>
 			</div>
+
+			<div className="delete-container">
+				<i className="fa fa-times-circle"></i>
+			</div>
 		</div>
 	)
 }
