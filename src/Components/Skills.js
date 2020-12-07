@@ -1,4 +1,6 @@
 import React, {Component} from 'react'
+import uniqid from 'uniqid'
+import SkillItem from './SkillItem'
 
 class Skills extends Component{
 	constructor(){
@@ -53,13 +55,31 @@ class Skills extends Component{
 		})
 	}
 
+	handleDelete = (id) => {
+		const filteredSkills = this.state.skills.filter(skill => {
+			return skill !== id
+		})
+
+		this.setState({
+			skills: filteredSkills
+		})
+	}
+
 	render(){
 		let hiddenForm = this.state.activeForm ? "skill-form" : "skill-form hidden"
 		let hiddenButton = this.state.activeButton ? "add-item" : "add-item hidden"
 
+		const displaySkill = this.state.skills.map((skill) => {
+			return <SkillItem skill={skill} key={uniqid()} handleDelete={this.handleDelete} />
+		})
+
 		return(
 			<div className="skills">
 				<h3>Skills</h3>
+
+				<div className="skills-list">
+					{displaySkill}
+				</div>
 
 				<form className={hiddenForm} onSubmit={this.handleSubmit}>
 					<div className="form-control">
@@ -67,7 +87,7 @@ class Skills extends Component{
 					<input
 						type="text"
 						name="skill"
-						placeholder="Enter a skill"
+						placeholder="Enter skill"
 						value={this.state.skill}
 						onChange={this.handleChange} 
 					/>
