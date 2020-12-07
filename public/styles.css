@@ -124,7 +124,7 @@ button:focus {
 	padding: 10px 20px 10px 20px;
 }
 
-.qual-card {
+.qual-card, .job-card {
 	margin: 0 auto 15px auto;
 	padding-left: 15px;
 	width: 95%;
@@ -137,7 +137,7 @@ button:focus {
 	width: 50%;
 }
 
-.school-details * {
+.school-details *, .job-details * {
 	margin-bottom: 5px;
 }
 
@@ -145,8 +145,16 @@ button:focus {
 	width: 40%;
 }
 
-.qual-details * {
+.qual-details *, .job-desc * {
 	margin-bottom: 5px;
+}
+
+.job-details {
+	width: 30%;
+}
+
+.job-desc {
+	width: 60%;
 }
 
 .delete-container {

@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import uniqid from 'uniqid'
+import JobItem from './JobItem'
 
 class Experience extends Component{
 	constructor(){
@@ -68,7 +69,16 @@ class Experience extends Component{
 				desc: ''
 			}
 		})
+	}
 
+	handleDelete = (id) => {
+		const filteredJobs = this.state.jobs.filter(job => {
+			return job.id !== id
+		})
+
+		this.setState({
+			jobs: filteredJobs
+		})
 	}
 
 	render() {
@@ -76,9 +86,15 @@ class Experience extends Component{
 		let hiddenForm = this.state.activeForm ? "experience-form" : "experience-form hidden"
 		let hiddenButton = this.state.activeButton ? "add-item" : "add-item hidden"
 
+		const displayJob = this.state.jobs.map((job) => {
+			return <JobItem data={job} key={job.id} handleDelete={this.handleDelete}/>
+		})
+
 		return(
 			<div className="experience">
 				<h3>Work Experience</h3>
+
+				{displayJob}
 
 				<form className={hiddenForm} onSubmit={this.handleSubmit}>
 					<div className="form-control">
