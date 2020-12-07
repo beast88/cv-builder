@@ -62,6 +62,11 @@ h5 {
 	font-size: 1.2rem;
 }
 
+h3 {
+	font-size: 1.5rem;
+	padding-bottom: 10px;
+}
+
 .personal {
 	width: 100%;
 	display: flex;
@@ -103,14 +108,9 @@ h5 {
 	width: 130px;
 }
 
-.education {
+.education, .experience {
 	width: 100%;
 	padding: 10px 20px 10px 20px;
-}
-
-.education h3 {
-	font-size: 1.5rem;
-	padding-bottom: 10px;
 }
 
 .qual-card {
@@ -149,7 +149,7 @@ h5 {
 	cursor: pointer;
 }
 
-.education-form {
+.education-form, .experience-form {
 	display: flex;
 	flex-direction: column;
 	flex-flow: row wrap;
@@ -173,15 +173,29 @@ h5 {
 .form-control input {
 	font-family: inherit;
 	font-size: 1.05rem;
+	border-radius: 4px;
+	border: 1px solid rgba(97, 106, 107, 0.5);
 }
 
 .form-control.w-50 input {
 	width: 55px;
 }
 
+.form-control input:focus, .form-control textarea:focus {
+	outline: none;
+	box-shadow: 0 0 3px black;
+}
+
 .form-control.buttons {
 	flex-direction: row;
 	justify-content: space-around;
+}
+
+.form-control textarea {
+	height: 100px;
+	font-family: inherit;
+	border-radius: 4px;
+	border: 1px solid rgba(97, 106, 107, 0.5);
 }
 
 button {

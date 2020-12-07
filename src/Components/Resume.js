@@ -1,6 +1,7 @@
 import React from 'react'
 import Personal from './Personal'
 import Education from './Education'
+import Experience from './Experience'
 
 const Resume = () => {
 	return (
@@ -8,6 +9,8 @@ const Resume = () => {
 			<Personal />
 			<hr />
 			<Education />
+			<hr />
+			<Experience />
 			<hr />
 		</main>
 	)
