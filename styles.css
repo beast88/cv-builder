@@ -264,3 +264,55 @@ button.cancel {
 .hidden {
 	display: none;
 }
+
+@media screen and (max-width: 768px) {
+	header {
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		width: 100vw;
+	}
+
+	header .fa-github {
+		margin-top: 0;
+		font-size: 1.75rem;
+	}
+
+	header .title {
+		font-size: 2rem;
+	}
+
+	header .fa-address-card {
+		margin-bottom: 0;
+		font-size: 1.75rem;
+	}
+
+	main {
+		width: 90%;
+	}
+
+	.personal-info h1 {
+		font-size: 1.75rem;
+	}
+
+	.personal-info h5 {
+		margin-top: 20px;
+	}
+
+	.personal-info input {
+		font-size: 1.5rem;
+		width: 150px;
+	}
+
+	.contact {
+		padding-right: 25px;
+	}
+
+	.qual-card, .job-card {
+		margin: 0 0 15px 0;
+	}
+
+	.school-details p, .qual-details p, .job-details p, .job-desc p {
+		font-size: 0.8rem;
+	}
+}
