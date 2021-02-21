@@ -6,7 +6,7 @@ const Header = () => {
 			<a 
 			href="https://github.com/beast88/cv-builder" 
 			target="_blank"
-			rel="noreferrer"
+			rel="noopener noreferrer"
 			><i className="fa fa-github"></i></a>
 
 			<h1 className="title">C.V. Builder</h1>
