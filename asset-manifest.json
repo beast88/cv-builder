@@ -1,11 +1,11 @@
 {
-  "main.js": "/cv-builder/static/js/main.9bd2a14e.chunk.js",
-  "main.js.map": "/cv-builder/static/js/main.9bd2a14e.chunk.js.map",
+  "main.js": "/cv-builder/static/js/main.9ca44627.chunk.js",
+  "main.js.map": "/cv-builder/static/js/main.9ca44627.chunk.js.map",
   "runtime~main.js": "/cv-builder/static/js/runtime~main.7d3b05d7.js",
   "runtime~main.js.map": "/cv-builder/static/js/runtime~main.7d3b05d7.js.map",
   "static/js/2.6564fcfa.chunk.js": "/cv-builder/static/js/2.6564fcfa.chunk.js",
   "static/js/2.6564fcfa.chunk.js.map": "/cv-builder/static/js/2.6564fcfa.chunk.js.map",
   "index.html": "/cv-builder/index.html",
-  "precache-manifest.0ebadea460cb0897a5d23ad4a5fc4638.js": "/cv-builder/precache-manifest.0ebadea460cb0897a5d23ad4a5fc4638.js",
+  "precache-manifest.3cd7d0e3ecf8a2d1429ea17d04a26c65.js": "/cv-builder/precache-manifest.3cd7d0e3ecf8a2d1429ea17d04a26c65.js",
   "service-worker.js": "/cv-builder/service-worker.js"
 }
